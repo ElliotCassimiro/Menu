@@ -4,72 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
-    <!--Swiper CDN-->
+<!--Swiper CDN-->
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 
-    <!--Font Awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--Style-->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+<!--Style-->
+     
+    <link 
+    rel="stylesheet" 
+    type="text/css" 
+    href="css/style.css">
+
+    <title>Menu Carousel</title>
 </head>
 <body>
-
     
+
 <!-- Slider container -->
-<div class="swiper_container">
+<div class="swiper mySwiper">
 
-    <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-    
-    <!-- Slides -->
-        <div class="swiper-slide">Entradas</div>
-            <img src="css\entradas.css" />
-         
-        </div>   
-        <div class="swiper-slide" style="background-image:url(porcoes.jpg) ;">Porções
-            <img src="css\porcoes.jpg" />
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+            <img src="css\entradas.jpg">
+            Entradas
         </div>
+        <div class="swiper-slide">
             <img src="css\porcoes.jpg">
-        <div class="swiper-slide">Principais
-            <img src="css\principais.jpg" />
+            Porções
         </div>
-            
-        <div class="swiper-slide">Sobremesas
-            <img src="css\sobremesas.jpg" />
+        <div class="swiper-slide">
+            <img src="css\principais.jpg">
+            Principais
         </div>
-            
+        <div class="swiper-slide">
+            <img src="css\sobremesas.jpg">
+            Sobremesas
         </div>
-    
-    <!-- pagination -->
-        <div class="swiper-pagination"></div>
-      
-    <!-- navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      
-    <!-- scrollbar -->
-        <div class="swiper-scrollbar"></div>
-        </div>
-      
-    
-    <!--javaScript-->
-        <script type="text/javascript" 
-        src="src/script.js">
-        </script>
-    
-        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-        <script type="module">
-            import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
-          
-            const swiper = new Swiper()
-            
-        </script>
+    </div>
+</div>
+  
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-
-
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "cards",
+      grabCursor: true,
+    });
+  </script>
 
 </body>
 </html>
