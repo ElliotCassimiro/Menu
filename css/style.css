@@ -36,9 +36,10 @@ html,
     }
 
     .swiper {
-      width:  500px;
-      height: 500px;
-     
+      width:  400px;
+      height: 400px;
+      justify-content: center;
+      
     }
     
     .swiper-slide {
