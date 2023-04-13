@@ -1,79 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-   
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--Swiper CDN-->
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <!--Swiper CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
-<!--Style-->
-     
-    <link 
-    rel="stylesheet" 
-    type="text/css" 
-    href="css/style.css">
+    <!--Style-->
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <title>Menu Carrousel</title>
 </head>
+
 <body>
-    
+
     <div class="fixed-header">
-        <div class="container">                                                                      
-                <a href="#">Home</a>
-                <a href="#">Entradas</a>
-                <a href="#">Porções</a>
-                <a href="#">Principais</a>
-                <a href="#">Sobremesas</a>   
-                <a href="#">Contato</a>   
+        <div class="container">
+            <a href="#">Home</a>
+            <a href="#">Entradas</a>
+            <a href="#">Porções</a>
+            <a href="#">Principais</a>
+            <a href="#">Sobremesas</a>
+            <a href="#">Contato</a>
         </div>
     </div>
 
-<!-- Slider container -->
-<div class="swiper mySwiper">
+    <!-- Slider container -->
+    <div class="swiper mySwiper">
 
-    <div class="swiper-wrapper">
+        <div class="swiper-wrapper">
 
-        <div class="swiper-slide">
-            <div class="img">
-            <img src="css\entradas.jpg" alt="Foto-01">
+            <div class="swiper-slide">
+                <div class="img">
+                    <img src="css\entradas.jpg" alt="Foto-01">
+                </div>
             </div>
-        </div>    
 
-        <div class="swiper-slide">
-            <div class="img">
-            <img src="css\porcoes1.png" alt="Foto-02">
+            <div class="swiper-slide">
+                <div class="img">
+                    <img src="css\porcoes1.png" alt="Foto-02">
+                </div>
             </div>
-        </div>  
 
-        <div class="swiper-slide">
-            <div class="img">
-            <img src="css\principais.jpg" alt="Foto-03">
+            <div class="swiper-slide">
+                <div class="img">
+                    <img src="css\principais.jpg" alt="Foto-03">
+                </div>
             </div>
-        </div> 
 
-        <div class="swiper-slide">
-            <div class="img">
-            <img src="css\sobremesas.jpg" alt="Foto-04">
+            <div class="swiper-slide">
+                <div class="img">
+                    <img src="css\sobremesas.jpg" alt="Foto-04">
+                </div>
             </div>
-        </div> 
 
+        </div>
     </div>
-</div>
-  
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      effect: "cards",
-      grabCursor: true,
-    });
-  </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "cards",
+            grabCursor: true,
+        });
+    </script>
 
 </body>
+
 </html>
