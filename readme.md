@@ -3,7 +3,7 @@
 
 <img src="https://img.shields.io/static/v1?label=Projeto&message=005&color=7159c1&style=for-the-badge&logo=ghost"/> <img src="https://img.shields.io/static/v1?label=Status&message=EM Construção&color=7159c1&style=for-the-badge&logo=ghost"/>
 
-:hammer: Funcionalidades do projeto
+:hammer: Funcionalidade do projeto
 
 - `Funcionalidade`:
     <p>Utilizada Api SwiperJS para gerar automaticamente o Carrousel, podendo ser utilizado quaisquer modelos disponiveis em https://swiperjs.com/. </p>
